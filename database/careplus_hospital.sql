@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS careplus_hospital CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE careplus_hospital;
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE IF EXISTS prescriptions;
+DROP TABLE IF EXISTS appointments;
+DROP TABLE IF EXISTS patient_profiles;
+DROP TABLE IF EXISTS users;
+SET FOREIGN_KEY_CHECKS=1;
+CREATE TABLE users(id INT AUTO_INCREMENT PRIMARY KEY,full_name VARCHAR(100) NOT NULL,phone VARCHAR(30) NOT NULL,username VARCHAR(60) NOT NULL UNIQUE,email VARCHAR(100) NOT NULL UNIQUE,password VARCHAR(255) NOT NULL,user_type ENUM('Admin','Doctor','Patient') NOT NULL DEFAULT 'Patient',date_of_birth DATE NULL,gender VARCHAR(20),address TEXT,specialization VARCHAR(100) DEFAULT NULL,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB;
+CREATE TABLE patient_profiles(id INT AUTO_INCREMENT PRIMARY KEY,user_id INT NOT NULL UNIQUE,blood_group VARCHAR(10) DEFAULT '',emergency_contact VARCHAR(30) DEFAULT '',FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE) ENGINE=InnoDB;
+CREATE TABLE appointments(id INT AUTO_INCREMENT PRIMARY KEY,patient_id INT NOT NULL,doctor_id INT NOT NULL,appointment_date DATE NOT NULL,appointment_time TIME NOT NULL,reason TEXT,status ENUM('Pending','Confirmed','Completed','Cancelled') DEFAULT 'Pending',created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY(patient_id) REFERENCES users(id) ON DELETE CASCADE,FOREIGN KEY(doctor_id) REFERENCES users(id) ON DELETE CASCADE,INDEX(doctor_id,appointment_date,appointment_time)) ENGINE=InnoDB;
+CREATE TABLE prescriptions(id INT AUTO_INCREMENT PRIMARY KEY,patient_id INT NOT NULL,doctor_id INT NOT NULL,diagnosis VARCHAR(255) NOT NULL,medicines TEXT NOT NULL,instructions TEXT,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY(patient_id) REFERENCES users(id) ON DELETE CASCADE,FOREIGN KEY(doctor_id) REFERENCES users(id) ON DELETE CASCADE) ENGINE=InnoDB;

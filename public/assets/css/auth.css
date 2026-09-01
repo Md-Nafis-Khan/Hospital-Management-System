@@ -1,0 +1,30 @@
+.auth-page { min-height: 100vh; background: #eef5f9; }
+.auth-shell { min-height: 100vh; display: grid; grid-template-columns: 1.15fr .85fr; }
+.auth-intro { padding: 10vh 8vw; background: #123f5d; color: #ffffff; display: flex; flex-direction: column; justify-content: center; }
+.brand-logo { color: #ffffff; font-size: 25px; display: flex; align-items: baseline; gap: 6px; }
+.brand-logo span { font-size: 9px; letter-spacing: 2px; opacity: .75; }
+.auth-intro h1 { font-size: clamp(36px, 4vw, 58px); line-height: 1.08; margin: 55px 0 22px; }
+.intro-line { width: 70px; height: 3px; background: #66b9e8; margin-bottom: 20px; }
+.auth-intro p { max-width: 590px; line-height: 1.7; opacity: .86; }
+.feature-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 17px; }
+.feature-list li { display: flex; flex-direction: column; gap: 4px; }
+.feature-list small, .feature-list span { opacity: .68; font-size: 13px; }
+.auth-card { align-self: center; width: min(540px, calc(100% - 50px)); margin: auto; background: #ffffff; border-radius: 14px; padding: 34px; box-shadow: 0 15px 40px rgba(18,63,93,.12); }
+.auth-icon { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: #e6f4fb; color: #1479b8; margin-bottom: 18px; }
+.auth-card h2 { margin: 0 0 7px; font-size: 27px; }
+.auth-subtitle { margin: 0 0 24px; color: #71818d; font-size: 14px; }
+.primary-btn { width: 100%; padding: 12px 16px; font-weight: 700; }
+.or-divider { display: flex; align-items: center; gap: 12px; margin: 22px 0; color: #8b9ba6; }
+.or-divider::before, .or-divider::after { content: ''; height: 1px; background: #dce5ea; flex: 1; }
+.registration-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.outline-btn { display: block; text-align: center; padding: 11px 10px; border: 1px solid #1479b8; border-radius: 7px; color: #1479b8; font-weight: 600; }
+.outline-btn:hover { background: #eaf6fc; text-decoration: none; }
+.doctor-btn { border-color: #426b8c; color: #426b8c; }
+.demo-note { display: block; margin-top: 20px; color: #7b8c97; text-align: center; }
+.signup-wrapper { min-height: 100vh; display: grid; place-items: center; padding: 40px 20px; }
+.signup-card { width: min(850px, 100%); }
+.brand-logo.centered { justify-content: center; color: #1479b8; margin-bottom: 18px; }
+.account-badge { width: fit-content; margin: 0 auto 10px; padding: 6px 11px; border-radius: 999px; background: #e8f5fc; color: #1479b8; font-size: 12px; font-weight: 700; }
+.account-badge.doctor { background: #edf2f7; color: #426b8c; }
+.signup-card h2, .signup-card .auth-subtitle { text-align: center; }
+.registration-switch { text-align: center; margin-top: 22px; color: #687b88; font-size: 14px; }

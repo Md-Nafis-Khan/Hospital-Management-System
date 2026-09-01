@@ -1,0 +1,10 @@
+.site-header { min-height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: #ffffff; border-bottom: 1px solid #dce7ee; }
+.brand { display: flex; align-items: baseline; gap: 5px; font-size: 22px; font-weight: 700; color: #1479b8; }
+.brand small { font-size: 10px; letter-spacing: 2px; color: #5e7282; }
+.user-info { display: flex; align-items: center; gap: 20px; font-size: 14px; }
+.layout { display: flex; min-height: calc(100vh - 128px); }
+.sidebar { width: 230px; padding: 24px 14px; background: #123f5d; display: flex; flex-direction: column; gap: 6px; }
+.sidebar a { color: #ffffff; padding: 12px 14px; border-radius: 7px; }
+.sidebar a:hover { background: rgba(255,255,255,.12); text-decoration: none; }
+.content { flex: 1; padding: 28px; overflow-x: auto; }
+.site-footer { min-height: 56px; display: flex; justify-content: space-between; align-items: center; padding: 0 28px; background: #ffffff; border-top: 1px solid #dce7ee; color: #667b8b; font-size: 13px; }

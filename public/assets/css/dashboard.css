@@ -1,0 +1,13 @@
+.cards { display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); gap: 18px; margin: 24px 0; }
+.cards > div { background: #ffffff; border: 1px solid #dce7ee; border-radius: 12px; padding: 22px; box-shadow: 0 4px 14px rgba(20,60,90,.06); }
+.cards span { display: block; color: #667b8b; font-size: 14px; margin-bottom: 10px; }
+.cards b { font-size: 30px; color: #1479b8; }
+.panel { background: #ffffff; border: 1px solid #dce7ee; border-radius: 12px; padding: 24px; margin-top: 20px; box-shadow: 0 4px 14px rgba(20,60,90,.05); }
+.panel.narrow { max-width: 680px; }
+.table { overflow-x: auto; background: #ffffff; border: 1px solid #dce7ee; border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #e4edf2; vertical-align: top; }
+th { background: #f1f6f9; font-size: 13px; }
+.btn, button { display: inline-block; border: 0; border-radius: 7px; padding: 10px 16px; cursor: pointer; background: #1479b8; color: #ffffff; }
+.btn:hover, button:hover { background: #0e628f; text-decoration: none; }
+button.danger, .danger { background: #b53b3b; }

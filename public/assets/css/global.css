@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; min-height: 100%; font-family: Arial, Helvetica, sans-serif; color: #18324a; background: #f4f8fb; }
+a { color: #1479b8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input, select, textarea { font: inherit; }
+.alert { padding: 12px 14px; border-radius: 8px; margin-bottom: 18px; background: #e8f7ee; color: #176b3a; border: 1px solid #bfe7cd; }
+.alert.error { background: #fff0f0; color: #a22b2b; border-color: #f1c1c1; }
+.centered { text-align: center; }
