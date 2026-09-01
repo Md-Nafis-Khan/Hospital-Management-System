@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CarePlus Hospital Management System
 
 ## Technology
