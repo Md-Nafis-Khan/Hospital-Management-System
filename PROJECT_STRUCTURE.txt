@@ -1,4 +1,4 @@
-HMS-MVC-Ultimate/
+HMS/
 ├── app/
 │   ├── controllers/
 │   ├── models/
@@ -9,5 +9,3 @@ HMS-MVC-Ultimate/
 ├── index.php
 └── README.md
 
-No classes are required. Controllers and models use simple PHP functions.
-Database access is MySQLi Procedural.
