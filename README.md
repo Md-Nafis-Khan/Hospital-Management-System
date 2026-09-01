@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CarePlus Hospital Management System
 
 ## Technology
@@ -34,3 +35,6 @@ The login page provides separate links for creating a Patient account and a Doct
 - `config/` contains database configuration.
 - `index.php` is the front controller and simple router.
 - `public/assets/css/` contains the CSS files.
+=======
+# Hospital-Management-System
+>>>>>>> 8a116a5d3f976cbb823f794721fd0a00935f7d02
