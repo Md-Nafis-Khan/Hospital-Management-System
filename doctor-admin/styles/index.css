@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f8;
+}
+
+.puro-page {
+  display: flex;
+  width: 800px;
+  min-height: 500px;
+  margin: 60px auto;
+  background-color: white;
+  border: 1px solid #176b87;
+}
+
+.chobi-ongsho {
+  width: 50%;
+}
+
+.chobi-ongsho img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-ongsho {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+form {
+  width: 100%;
+}
+
+h1 {
+  color: #176b87;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #bbbbbb;
+  background-color: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  background-color: #176b87;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #12566c;
+}
+
+#register[hidden] {
+  display: none;
+}
+
+.registration-link,
+.login-link {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.success {
+  color: #17633a;
+}
+.error {
+  color: #9b2020;
+}
+@media (max-width: 850px) {
+  .puro-page {
+    width: calc(100% - 32px);
+    margin: 16px;
+  }
+  .chobi-ongsho {
+    display: none;
+  }
+  .form-ongsho {
+    width: 100%;
+  }
+}
